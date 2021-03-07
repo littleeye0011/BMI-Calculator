@@ -1,0 +1,79 @@
+:root {
+  --none-bmi-color: #ffffff;
+  --thin-bmi-color: #faf87c;
+  --normal-bmi-color: #3cdf44;
+  --medium-bmi-color: #fe9b56;
+  --fat-bmi-color: #ff4800;
+  --more-fat-bmi-color: #ff0000;
+  --current-bmi-color: var(--good-bmi-color);
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(155, 235, 235);
+  font-family: "Kanit", sans-serif;
+}
+.container {
+  width: 1000px;
+  margin: 30px auto;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+}
+
+.title {
+  text-align: center;
+  max-width: 450px;
+  margin: 10px auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: rgb(190, 190, 190) solid 1px;
+  border-radius: 10px;
+}
+
+.result {
+  text-align: center;
+  max-width: 450px;
+  margin: 20px auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: rgb(190, 190, 190) solid 1px;
+  background-color: var(--current-bmi-color);
+  border-radius: 10px;
+}
+
+.input {
+  max-width: 450px;
+  margin: 30px auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  border: rgb(190, 190, 190) solid 1px;
+  border-radius: 10px;
+}
+
+input.invalid {
+  border: 1px solid var(--more-fat-bmi-color);
+}
+
+small {
+  color: var(--more-fat-bmi-color);
+}
+
+button {
+  background-color: rgb(135, 255, 165);
+  font-size: 1rem;
+
+  margin-top: 1.5em;
+
+  padding: 0.3em 0.4em;
+  border-radius: 0.2em;
+  line-height: 1.2;
+  font-family: "Kanit", sans-serif;
+}
+
+.explan img {
+  width: 900px;
+  display: block;
+  margin: 5px auto;
+}
